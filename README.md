@@ -1,2 +1,2 @@
 # js-rohit
-a code of js repo
+A code repo for javascript
