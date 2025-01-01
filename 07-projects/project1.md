@@ -1,13 +1,13 @@
-#Projects related to DOM
+# Projects related to DOM
 
 
-##Project Link
+## Project Link
 
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
-#solution code
+# solution code
 
-##project1
+## project1
 ```javascipt
 console.log("Rohit")
 const buttons =document.querySelectorAll('.button')
@@ -37,7 +37,7 @@ buttons.forEach(function(button){
 });
 ```
 
-##project 2 solution of BMI
+## project 2 solution of BMI
 ```javascript
 const form = document.querySelector('form');
 // this usecase will give us empty
