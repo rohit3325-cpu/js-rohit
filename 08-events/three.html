@@ -7,25 +7,30 @@
 </head>
 <body>
     <h1>Rohit code</h1>
+    <button id="start">Start</button>
+    <br>
     <button id="stop">Stop</button>
+
 </body>
 <script>
-    const sayRohit = function(){
-        console.log("Rohit2");
+    let intervalId;
+    const sayDate = function(str){
+        console.log(str,Date.now());
     }
-    const changeText =function(){document.querySelector('h1').innerHTML = "best js series"   
-    }
-    const changeText2 = function(){document.querySelector('h1').innerHTML = "on yputube"
-} 
 
-    setTimeout(sayRohit,2000)
-    const changeMe 
-      =setTimeout(changeText,1500)
-    // setTimeout(changeText2,3000)
-     
-   document.querySelector('#stop').addEventListener('click',function(){
-    clearTimeout(changeMe)
+   
+document.querySelector('#start').addEventListener('click',function(){
+    if(!intervalId){
+    intervalId= setInterval(sayDate,1000,"Hi")
+    }
+   });
+    
+document.querySelector('#stop').addEventListener('click',function(){
+   if(intervalId){
+    clearTimeout(intervalId)
+    intervalId=null;
     console.log("stopped")
+   }
    })
 </script>
 </html>
